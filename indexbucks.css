@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: white;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgb(65,179,211);
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: black;
+    border-radius: 2px;
+}
+
+.container .center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.center .buttons{
+  margin: 35px 280px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background:rgb(207, 96, 88);
+    border: solid 1px red;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: 2s;
+}
+
+.buttons button:hover{
+    background: #fff;
+}
+
+.container2 .başlık2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.slider-tas{
+    width: 800px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider-tas ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.slider-tas ul li{
+    position: absolute;
+}
+
+.slider-tas ul li:nth-of-type(1){
+    left: 0px;
+}
+
+.slider-tas ul li:nth-of-type(2){
+    left: 800px;
+}
+
+.slider-tas ul li:nth-of-type(3){
+    left: 1600px;
+}
+
+.slider{
+    position: absolute;
+    left: 0px;
+
+
+    animation-name: slayt;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.slider:hover{
+    animation-play-state: paused;
+}
+
+.slider-tas ul li:hover{transform: scale(1.1);}
+
+
+@keyframes slayt{
+    0%{left: 0%;}
+    50%{left: -100%;}
+    100%{left: -200%;}
+} 
+
+
+.area01{
+    background-color: white;
+    height: 100vh;
+    background-size: 50% 100%;
+}
+
+
+
+
+  #box {
+    max-width: 300px;
+    position: relative;
+    left:1049px;
+    top: 20px;
+}
+ 
+#box .fa-search {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 20px;
+    color:cornflowerblue;
+}
+ 
+#search {
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    font-size:18px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+ 
+#search:focus {
+    width: 100%;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

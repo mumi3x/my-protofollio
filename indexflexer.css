@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgb(65,179,211);
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: black;
+    border-radius: 2px;
+}
+
+.container .center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.center .buttons{
+  margin: 35px 280px;
+}
+
+.buttons .button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background:rgb(207, 96, 88);
+    border: solid 1px red;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: 2s;
+}
+
+.buttons button:hover{
+    background: #fff;
+}
+
+.container2 başlık2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flostler{
+    background-color: rgb(255, 255, 255);
+    height: 300vh;
+    background-size: 100% 100%;
+}
+
+
+.flostler .area{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 125%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+    margin-top: auto;
+   
+}
+
+
+.flostler .area .textarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 450%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+
+
+}
+
+.flostler .area .area01{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 1200%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+    margin-top: auto;
+   
+}
+
+
+.flostler .area .area01 .netherarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 250%;
+    left: 2%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+
+
+}
+
+
+
+.slider-tas{
+    width: 800px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider-tas ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.slider-tas ul li{
+    position: absolute;
+}
+
+.slider-tas ul li:nth-of-type(1){
+    left: 0px;
+}
+
+.slider-tas ul li:nth-of-type(2){
+    left: 800px;
+}
+
+.slider-tas ul li:nth-of-type(3){
+    left: 1600px;
+}
+
+.slider{
+    position: absolute;
+    left: 0px;
+
+
+    animation-name: slayt;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.slider:hover{
+    animation-play-state: paused;
+}
+
+.slider-tas ul li:hover{transform: scale(1.1);}
+
+
+@keyframes slayt{
+    0%{left: 0%;}
+    50%{left: -100%;}
+    100%{left: -200%;}
+} 
+
+#yukari-cik {
+    height: 40px;
+    width: 40px;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    text-indent:-9999px;
+    z-index:9999;
+    display:none;
+    background: url("indir.png");
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    }
+
+
+
+
+
